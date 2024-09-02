@@ -1,0 +1,173 @@
+/* From the challange */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Young Serif";
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+
+/* Variables */
+:root {
+  --header-font: "Young Serif", Serif;
+  --primary-font: "Outfit", serif;
+  --primary-color: hsl(30, 10%, 34%);
+  --secondery-color: hsl(14, 45%, 36%);
+  --stone-900-color: hsl(24, 5%, 18%);
+  --rose-800-color: hsl(332, 51%, 32%);
+  --rose-50-color: hsl(330, 100%, 98%);
+  --primary-ft-sz: 2.5rem;
+  --secondary-ft-sz: 1.2rem;
+}
+body {
+  font-size: 16px;
+}
+.wrapper {
+  display: grid;
+  place-items: center;
+  background-color: #f3e5d8ff;
+  padding: 100px;
+}
+.container {
+  max-width: 45rem;
+  background-color: white;
+  padding: 25px;
+  border-radius: 25px;
+}
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 15px;
+  font-style: italic;
+}
+h1 {
+  color: var(--stone-900-color);
+  font-size: var(--primary-ft-sz);
+}
+h1,
+h2 {
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+.main-paragraph {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  line-height: 1.5;
+}
+.prep-sec {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: var(--rose-50-color);
+}
+.prep-title {
+  color: var(--rose-800-color);
+  font-family: var(--primary-font);
+  font-weight: 600;
+  padding-left: 15px;
+  line-height: 0.2;
+}
+ul {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  color: var(--primary-color);
+  line-height: 1.7;
+}
+li {
+  padding-left: 15px;
+  line-height: 1.8;
+}
+
+.prep-list li::marker {
+  color: var(--rose-800-color);
+  font-size: small;
+}
+
+h2 {
+  color: var(--secondery-color);
+}
+.Ingredients-sec li::marker {
+  color: var(--secondery-color);
+  font-size: small;
+}
+ol {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+span {
+  font-weight: 600;
+  color: var(--stone-900-color);
+}
+.Instructions-sec li::marker {
+  color: var(--secondery-color);
+  font-weight: 700;
+}
+hr {
+  border: none;
+  outline: none;
+  height: 1px;
+  background-color: lightgray;
+  margin-top: 2rem;
+}
+.Nutrition-sec p,
+.Nutrition-sec table {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  color: var(--primary-color);
+}
+tr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1em;
+  border-bottom: 1px solid lightgray;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+[data-cell="Nutrient-value"] {
+  color: var(--secondery-color);
+  font-weight: 600;
+}
+footer {
+  background-color: #f3e5d8ff;
+}
+/* Responsevness */
+@media (max-width: 500px) {
+  body {
+    font-size: 12px;
+  }
+  .wrapper {
+    margin: 0px;
+    padding: 0px;
+  }
+  .container {
+    border-radius: 0;
+    margin: 0px;
+    padding: 0;
+  }
+  img {
+    border-radius: 0;
+  }
+  .recipe-container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  footer {
+    background-color: white;
+  }
+}
