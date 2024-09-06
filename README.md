@@ -15,5 +15,5 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Live Link of The Website
 
-https://nidhal-khazene.github.io/Recipe-Page-Frontend-Mentor-Challenge-/
+https://nidhal-khazene.github.io/Recipe-Page/
 
